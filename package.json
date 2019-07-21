@@ -4,7 +4,10 @@
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
-    "watch": "gulp watch"
+      "start": "jekyll serve",
+      "scripts": "gulp scripts",
+      "styles": "gulp styles",
+      "watch": "gulp watch"
   },
   "keywords": [
     "portfolio",

@@ -10,8 +10,13 @@
     portfolio website.
 */
 
-(function($) {
+console.log('will load particlesJS?');
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
 
+(function($) {
     // Remove no-js class
     $('html').removeClass('no-js');
 
