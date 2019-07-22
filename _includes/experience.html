@@ -1,7 +1,17 @@
 <div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
+    {% assign experience = site.es | where:"section", "experience" | first %}
+    <h2 class="heading">{{ experience.title}}</h2>
     <div id="experience-timeline">
-        <div data-date="September 2015 – September 2016">
+        {% assign experience_items = site.es | where:"section", "experience-items" | sort: 'order' | reverse %}
+        {% for item in experience_items %}
+        <div data-date="{{ item.date }}">
+            <h3>{{ item.title }}</h3>
+            <h4>{{ item.subtitle }}</h4>
+            <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
+
+        <!-- <div data-date="September 2015 – September 2016">
             <h3>Employer Name</h3>
             <h4>Job Title</h4>
             <p>
@@ -15,14 +25,6 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
             </p>
-        </div>
-
-        <div data-date="September 2015 – September 2016">
-            <h3>Employer Name</h3>
-            <h4>Job Title</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
+        </div> -->
     </div>
 </div>

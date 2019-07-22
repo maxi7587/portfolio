@@ -1,0 +1,8 @@
+---
+title: Mi portfolio
+section: projects-items-freelance
+picture: /images/portfolio.jpg
+text: Para mi portafolio utilicé Jekyll, particleJS y Gulp.
+link: //github.com/maxi7587/angular-auto-import
+link_text: Angular Auto Import
+---

@@ -2,7 +2,7 @@
     Title: Dev Portfolio Template
     Version: 1.2.1
     Last Change: 08/27/2017
-    Author: Ryan Fitzgerald
+    Author: Maximiliano Cruz
     Repo: https://github.com/RyanFitzgerald/devportfolio-template
     Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
 
@@ -12,7 +12,7 @@
 
 console.log('will load particlesJS?');
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'js/particles.json', function() {
+particlesJS.load('particles-js', '/js/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 

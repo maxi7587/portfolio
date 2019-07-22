@@ -1,16 +1,18 @@
 <div id="education">
-    <h2 class="heading">Education</h2>
+    {% assign education = site.es | where:"section", "education" | first %}
+    <h2 class="heading">{{ education.title }}</h2>
+    {% assign education_items = site.es | where:"section", "education-items" %}
+    {% for item in education_items %}
     <div class="education-block">
-        <h3>University of Ottawa</h3>
+        <h3>{{ item.title }}</h3>
         <span class="education-date">Sept 2016 - Sept 2017</span>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-        </p>
+        <h4>{{ item.subtitle }}</h4>
+        <p>{{ item.text }}</p>
     </div>
+    {% endfor %}
     <!-- End .education-block -->
 
-    <div class="education-block">
+    <!-- <div class="education-block">
         <h3>University of Ottawa</h3>
         <span class="education-date">Sept 2016 - Sept 2017</span>
         <h4>Bachelor of Science in Computer Science</h4>
@@ -25,7 +27,6 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
         </ul>
-    </div>
+    </div> -->
     <!-- End .education-block -->
 </div>
-<!-- End #education -->
