@@ -1,8 +1,9 @@
 <div id="experience" class="background-alt">
-    {% assign experience = site.es | where:"section", "experience" | first %}
+    {% assign site_lang = site[page.lang] %}
+    {% assign experience = site_lang | where:"section", "experience" | first %}
     <h2 class="heading">{{ experience.title}}</h2>
     <div id="experience-timeline">
-        {% assign experience_items = site.es | where:"section", "experience-items" | sort: 'order' | reverse %}
+        {% assign experience_items = site_lang | where:"section", "experience-items" | sort: "order" | reverse %}
         {% for item in experience_items %}
         <div data-date="{{ item.date }}">
             <h3>{{ item.title }}</h3>

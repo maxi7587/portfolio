@@ -1,7 +1,7 @@
 <div id="about">
     <div class="container">
         <div class="row">
-            {% assign about = site.es | where:"section", "about" | first %}
+            {% assign about = site[page.lang] | where:"section", "about" | first %}
             <div class="col-md-4">
                 <h2 class="heading">{{ about.title }}</h2>
             </div>

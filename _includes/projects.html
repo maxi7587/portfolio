@@ -1,10 +1,10 @@
 <div id="projects" class="background-alt">
-    {% assign projects = site.es | where:"section", "projects" %}
+    {% assign projects = site[page.lang] | where:"section", "projects" %}
     {% for project in projects %}
     <h2 class="heading">{{ project.title }}</h2>
     <div class="container">
         <div class="row">
-            {% assign projects_items = site.es | where:"section", project.items %}
+            {% assign projects_items = site[page.lang] | where:"section", project.items %}
             {% for item in projects_items %}
             <div class="project shadow-large">
                 <div class="project-image">

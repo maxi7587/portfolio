@@ -2,12 +2,13 @@
     <i class="fa fa-bars" aria-hidden="true"></i>
 </div>
 <!-- End #mobile-menu-toggle -->
-{% assign header = site.es | where:"section", "header" | first %}
+
+{% assign header = site[page.lang] | where:"section", "header" | first %}
 <header>
     <div id="mobile-menu-close">
         <span>{{ header.menu_close }}</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-    {% assign header_items = site.es | where:"section", "header-items" %}
+    {% assign header_items = site[page.lang] | where:"section", "header-items" %}
     <ul id="menu" class="shadow">
         {% for item in header_items %}
         <li>
@@ -17,6 +18,8 @@
     </ul>
 </header>
 <!-- End header -->
+
+<pre>Page lang: {{ page.lang }}</pre>
 
 <div id="lead">
     <div id="lead-content">

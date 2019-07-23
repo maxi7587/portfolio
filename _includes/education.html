@@ -1,7 +1,7 @@
 <div id="education">
-    {% assign education = site.es | where:"section", "education" | first %}
+    {% assign education = site[page.lang] | where:"section", "education" | first %}
     <h2 class="heading">{{ education.title }}</h2>
-    {% assign education_items = site.es | where:"section", "education-items" %}
+    {% assign education_items = site[page.lang] | where:"section", "education-items" %}
     {% for item in education_items %}
     <div class="education-block">
         <h3>{{ item.title }}</h3>

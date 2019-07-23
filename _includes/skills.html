@@ -1,5 +1,5 @@
 <div id="skills">
-    {% assign skills = site.es | where:"section", "skills" | first %}
+    {% assign skills = site[page.lang] | where:"section", "skills" | first %}
     <h2 class="heading">{{ skills.title }}</h2>
     <ul>
         <li>HTML</li>

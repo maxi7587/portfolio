@@ -25,7 +25,7 @@
                     <li>
                         <a href="https://wa.me/5492604332205" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                     </li>
-                    {% assign header = site.es | where:"section", "header" | first %}
+                    {% assign header = site[page.lang] | where:"section", "header" | first %}
                     <li>
                         <a href="{{ header.resume_link }}"><i class="fa fa-file-code-o" aria-hidden="true"></i></a>
                     </li>

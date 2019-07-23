@@ -1,5 +1,5 @@
 <div id="contact">
-    {% assign contact = site.es | where:"section", "contact" | first %}
+    {% assign contact = site[page.lang] | where:"section", "contact" | first %}
     <h2>{{ contact.title }}</h2>
     <div id="contact-form">
         <form method="POST" action="https://formspree.io/email@email.com">

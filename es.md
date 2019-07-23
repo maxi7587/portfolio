@@ -1,5 +1,5 @@
 ---
 title: Mi portfolio
 layout: default
-lang: es
+lang: "es"
 ---
