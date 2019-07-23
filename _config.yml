@@ -21,3 +21,7 @@ collections:
     en:
     es:
         output: true
+
+strict_front_matter: true
+liquid:
+  error_mode: strict
