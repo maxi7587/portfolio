@@ -28,6 +28,9 @@ particlesJS.load('particles-js', '/js/particles.json', function() {
 
         e.preventDefault();
         var heading = $(this).attr('href');
+        console.log('clicked ---> this', this);
+        console.log('clicked ---> $(heading)', heading);
+        console.log('clicked ---> $(heading).offset() ', $(heading).offset());
         var scrollDistance = $(heading).offset().top;
 
         $('html, body').animate({

@@ -22,7 +22,14 @@
     <div id="lead-content">
         <h1>{{ header.name }}</h1>
         <h2>{{ header.job_title }}</h2>
-        <a href="{{ header.resume_link }}" class="btn-rounded-white">{{ header.resume_link_text }}</a>
+        <span>
+            <a href="https://github.com/maxi7587" target="_blank" style="padding: 10px"><i class="fa fa-github fa-3x" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://stackoverflow.com/users/8431934/maximiliano-cruz" target="_blank" style="padding: 10px"><i class="fa fa-stack-overflow fa-3x" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/maximiliano-cruz-990a8777/" target="_blank" style="padding: 10px"><i class="fa fa-linkedin fa-3x" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://wa.me/5492604332205" target="_blank" style="padding: 10px"><i class="fa fa-whatsapp fa-3x" style="color: white" aria-hidden="true"></i></a>
+            <a href="{{ header.resume_link }}" style="padding: 10px"><i class="fa fa-file-code-o fa-3x" style="color: white" aria-hidden="true"></i></a>
+        </span>
+        <!-- <a href="{{ header.resume_link }}" class="btn-rounded-white">{{ header.resume_link_text }}</a> -->
     </div>
     <!-- End #lead-content -->
 

@@ -1,5 +1,5 @@
 ---
-title: My page
+title: Maximiliano Cruz | Portfolio
 layout: default
 ---
 

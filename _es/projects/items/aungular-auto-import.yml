@@ -2,7 +2,7 @@
 title: Angular Auto Import (paquete para Atom IDE, deprecado)
 section: projects-items-freelance
 picture: /images/angular-auto-import.jpg
-text: Angular auto import es un package para el IDE Atom (el que habitualmente utilizo para mis proyectos Front End). Actualmente está deprecado, ya que el paquete atom-typescript incorporó una funcionalidad similar.
+text: Angular auto import es un package para Atom (el que habitualmente utilizo para mis proyectos Front End). Actualmente está deprecado, ya que el paquete atom-typescript incorporó una funcionalidad similar.
 link: //github.com/maxi7587/angular-auto-import
 link_text: Angular Auto Import
 ---
