@@ -12,9 +12,9 @@
     <ul id="menu" class="shadow">
         <li>
             {% if page.lang == "es" %}
-            <a href="/en/" class="no-scroll"><i class="fa fa-language" aria-hidden="true"></i> EN</a>
+            <a href="{{ site.baseurl }}/en/" class="no-scroll"><i class="fa fa-language" aria-hidden="true"></i> EN</a>
             {% else if page.lang == "en" %}
-            <a href="/es/" class="no-scroll"><i class="fa fa-language" aria-hidden="true"></i> ES</a>
+            <a href="{{ site.baseurl }}/es/" class="no-scroll"><i class="fa fa-language" aria-hidden="true"></i> ES</a>
             {% endif %}
         </li>
         {% for item in header_items %}
