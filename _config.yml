@@ -1,4 +1,5 @@
 name: Maximiliano Cruz | Portfolio
+baseurl: /portfolio/
 
 defaults:
     - scope:
